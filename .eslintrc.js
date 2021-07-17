@@ -31,7 +31,12 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/react-in-jsx-scope': 'off',
     'no-use-before-define': 'off',
-    'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
+    'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-filename-extension': [
+      'error',
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',

@@ -1,5 +1,16 @@
+import { GlobalStyle } from './styles/global'
+
+// import { Header } from './components/Header'
+import { Cover } from './components/Cover'
+
 function App() {
-  return <h1>Nanny Share</h1>
+  return (
+    <>
+      <Cover />
+
+      <GlobalStyle />
+    </>
+  )
 }
 
 export default App
