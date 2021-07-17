@@ -15,7 +15,8 @@ interface ContainerProps extends React.HTMLProps<HTMLButtonElement> {
 }
 
 export const Container = styled.button<ContainerProps>`
-  padding: 0.825rem 1.5rem;
+  padding: 0 1.5rem;
+  height: 3rem;
   border: 0;
   border-radius: 4px;
   background: var(--green);

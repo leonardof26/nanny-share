@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  min-height: 70vh;
 `
 
 export const Background = styled.img`
   width: 100%;
+  height: 100%;
 
   object-fit: cover;
   background: var(--purple-gradient);
