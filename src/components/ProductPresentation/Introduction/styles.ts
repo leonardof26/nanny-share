@@ -1,27 +1,48 @@
 import styled from 'styled-components'
+import { device } from '../../../styles/devices'
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
 
   img {
-    max-height: 392px;
+    max-height: 204px;
+  }
+
+  @media ${device.tabletPortrait} {
+    flex-direction: row;
+
+    img {
+      max-height: 240px;
+    }
+  }
+
+  @media ${device.tabletLandScaped} {
+    > img {
+      max-height: 330px;
+    }
+  }
+
+  @media ${device.laptop} {
+    > img {
+      max-height: 392px;
+    }
   }
 `
 
 export const Info = styled.div`
-  max-width: 43%;
-
-  > h1 {
-    font-weight: 500;
-    font-size: 1.75rem;
-    line-height: 2rem;
-  }
+  margin-top: 2rem;
+  text-align: center;
 
   > p {
     padding: 1.5rem 0;
-    font-weight: 500;
-    line-height: 1.5rem;
+  }
+
+  @media ${device.tabletPortrait} {
+    margin-top: 0;
+    max-width: 43%;
+    text-align: left;
   }
 `

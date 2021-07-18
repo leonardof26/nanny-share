@@ -1,9 +1,17 @@
 import styled from 'styled-components'
 
+import { device } from '../../styles/devices'
+
 export const Container = styled.div`
   position: relative;
   overflow: hidden;
-  min-height: 70vh;
+  height: 60vh;
+  width: 100%;
+
+  @media ${device.mobileL} {
+    min-height: 70vh;
+    height: auto;
+  }
 `
 
 export const Background = styled.img`

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { device } from '../../styles/devices'
 
 export const Container = styled.div`
   max-width: 1050px;
-  margin: auto;
+  margin: auto 1rem auto 1rem;
 
   > div {
     padding: 5rem 0;
@@ -12,12 +13,44 @@ export const Container = styled.div`
       &:before {
         content: '';
         position: absolute;
-        left: 12.5%;
+        left: 0;
         bottom: 0;
         height: 1px;
-        width: 75%;
+        width: 100%;
         border-bottom: 2px solid var(--grey);
+
+        @media ${device.tabletLandScaped} {
+          width: 75%;
+          left: 12.5%;
+        }
+
+        @media ${device.mobileL} {
+          width: 90%;
+          left: 5%;
+        }
       }
     }
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 1.375rem;
+    line-height: 2rem;
+  }
+
+  p {
+    line-height: 1.75rem;
+  }
+
+  @media ${device.mobileL} {
+    margin: auto 2rem auto 2rem;
+
+    > h1 {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media ${device.laptop} {
+    margin: auto;
   }
 `

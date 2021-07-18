@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   > h1 {
     font-weight: 500;
@@ -14,7 +15,6 @@ export const Container = styled.div`
   }
 
   > p {
-    font-weight: 400;
     line-height: 1.75rem;
     max-width: 790px;
     text-align: center;
