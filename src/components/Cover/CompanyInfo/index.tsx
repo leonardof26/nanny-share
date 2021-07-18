@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { FaPlay } from 'react-icons/fa'
 
 import { Container, Info, CompanyVideo } from './styles'

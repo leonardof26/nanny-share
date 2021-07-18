@@ -7,7 +7,7 @@ interface InputProps {
 export const Container = styled.input<InputProps>`
   height: 3rem;
   border: 1px solid;
-  border-color: ${(props) => (props.error ? 'var(--red)' : 'var(--gray)')};
+  border-color: ${(props) => (props.error ? 'var(--red)' : 'var(--grey)')};
 
   font-weight: 400;
   line-height: 1.25;

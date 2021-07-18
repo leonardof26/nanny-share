@@ -1,13 +1,19 @@
 import { Container } from './styles'
 
-import { Link } from '../Link'
+import { Link } from '../../Link'
 
 function Navigation() {
   return (
     <Container>
-      <Link href="blank">Create Your Nanny Share</Link>
-      <Link href="blank">Browse Shares</Link>
-      <Link href="blank">Our Story</Link>
+      <Link href="_" color="white">
+        Create Your Nanny Share
+      </Link>
+      <Link href="_" color="white">
+        Browse Shares
+      </Link>
+      <Link href="_" color="white">
+        Our Story
+      </Link>
     </Container>
   )
 }
