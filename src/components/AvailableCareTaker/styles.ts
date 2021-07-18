@@ -25,7 +25,15 @@ export const Container = styled.div`
     margin: 1rem 0;
   }
 
-  @media ${device.tabletLandScaped} {
+  @media ${device.mobileLToUp} {
+    text-align: left;
+
+    > img {
+      height: 3.5rem;
+    }
+  }
+
+  @media ${device.tabletLandScapedToUp} {
     flex-direction: row;
 
     > img {
@@ -35,14 +43,6 @@ export const Container = styled.div`
     > a {
       max-width: 100%;
       margin: 0;
-    }
-  }
-
-  @media ${device.mobileL} {
-    text-align: left;
-
-    > img {
-      height: 3.5rem;
     }
   }
 `

@@ -1,9 +1,11 @@
 import React from 'react'
 
+import { FieldError } from 'react-hook-form'
+
 import { Container } from './styles'
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  error?: boolean
+  error?: FieldError
 }
 
 function Input({ error, ...rest }: InputProps) {
@@ -13,5 +15,5 @@ function Input({ error, ...rest }: InputProps) {
 export default Input
 
 Input.defaultProps = {
-  error: false,
+  error: null,
 }

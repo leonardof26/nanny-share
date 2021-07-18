@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { device } from '../../../styles/devices'
 
 export const Container = styled.div`
@@ -11,7 +12,7 @@ export const Container = styled.div`
     max-height: 204px;
   }
 
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     flex-direction: row;
 
     img {
@@ -19,13 +20,13 @@ export const Container = styled.div`
     }
   }
 
-  @media ${device.tabletLandScaped} {
+  @media ${device.tabletLandScapedToUp} {
     > img {
       max-height: 330px;
     }
   }
 
-  @media ${device.laptop} {
+  @media ${device.laptopToUp} {
     > img {
       max-height: 392px;
     }
@@ -40,7 +41,7 @@ export const Info = styled.div`
     padding: 1.5rem 0;
   }
 
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     margin-top: 0;
     max-width: 43%;
     text-align: left;

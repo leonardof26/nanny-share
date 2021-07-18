@@ -15,7 +15,7 @@ export const Container = styled.div`
     margin-right: 0;
   }
 
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     > a {
       display: block;
     }

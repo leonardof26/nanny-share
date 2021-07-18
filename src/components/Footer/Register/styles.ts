@@ -21,7 +21,7 @@ export const Container = styled.div`
     padding-bottom: 2rem;
   }
 
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     > h1 {
       font-size: 1.75rem;
     }

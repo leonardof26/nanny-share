@@ -15,25 +15,25 @@ export const Container = styled.div`
     display: none;
   }
 
-  @media ${device.laptop} {
-    padding: 0;
-    max-width: 1080px;
-
-    > img {
-      margin-right: 5rem;
-    }
+  @media ${device.mobileLToUp} {
+    height: calc(70vh - 60px);
+    margin-top: 5rem;
   }
 
-  @media ${device.tabletLandScaped} {
+  @media ${device.tabletLandScapedToUp} {
     > img {
       height: 290px;
       display: block;
     }
   }
 
-  @media ${device.mobileL} {
-    height: calc(70vh - 60px);
-    margin-top: 5rem;
+  @media ${device.laptopToUp} {
+    padding: 0;
+    max-width: 1080px;
+
+    > img {
+      margin-right: 5rem;
+    }
   }
 `
 
@@ -56,13 +56,7 @@ export const Info = styled.div`
     line-height: 1.75rem;
   }
 
-  @media ${device.tabletLandScaped} {
-    max-width: 590px;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     > h1 {
       line-height: 3rem;
       font-size: 2.5rem;
@@ -72,6 +66,12 @@ export const Info = styled.div`
       line-height: 1.5rem;
       font-size: 1.125rem;
     }
+  }
+
+  @media ${device.tabletLandScapedToUp} {
+    max-width: 590px;
+    align-items: flex-start;
+    text-align: left;
   }
 `
 

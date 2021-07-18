@@ -8,7 +8,7 @@ export const Container = styled.div`
   height: 60vh;
   width: 100%;
 
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     min-height: 70vh;
     height: auto;
   }

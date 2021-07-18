@@ -19,14 +19,14 @@ export const Container = styled.div`
         width: 100%;
         border-bottom: 2px solid var(--grey);
 
-        @media ${device.tabletLandScaped} {
-          width: 75%;
-          left: 12.5%;
-        }
-
-        @media ${device.mobileL} {
+        @media ${device.mobileLToUp} {
           width: 90%;
           left: 5%;
+        }
+
+        @media ${device.tabletLandScapedToUp} {
+          width: 75%;
+          left: 12.5%;
         }
       }
     }
@@ -42,7 +42,7 @@ export const Container = styled.div`
     line-height: 1.75rem;
   }
 
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     margin: auto 2rem auto 2rem;
 
     > h1 {
@@ -50,7 +50,7 @@ export const Container = styled.div`
     }
   }
 
-  @media ${device.laptop} {
+  @media ${device.laptopToUp} {
     margin: auto;
   }
 `

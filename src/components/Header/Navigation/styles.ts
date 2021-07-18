@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     display: flex;
   }
 `

@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+
 import { device } from '../../../styles/devices'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -12,7 +14,7 @@ export const Container = styled.div`
     margin: auto;
   }
 
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     flex-direction: row;
 
     img {
@@ -21,13 +23,13 @@ export const Container = styled.div`
     }
   }
 
-  @media ${device.tabletLandScaped} {
+  @media ${device.tabletLandScapedToUp} {
     img {
       max-height: 300px;
     }
   }
 
-  @media ${device.laptop} {
+  @media ${device.laptopToUp} {
     img {
       max-height: 336px;
     }
@@ -42,7 +44,7 @@ export const Info = styled.div`
     padding: 2.5rem 0;
   }
 
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     margin-top: 0;
     max-width: 45%;
     text-align: left;

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { device } from '../../../styles/devices'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +33,7 @@ export const Container = styled.div`
     }
   }
 
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     > span {
       line-height: 1.5rem;
     }

@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+
 import { device } from '../../../styles/devices'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,19 +20,19 @@ export const Container = styled.div`
     display: none;
   }
 
-  @media ${device.laptop} {
-    > img {
-      max-height: 392px;
-      margin: 0;
-    }
-  }
-
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     > img {
       display: block;
     }
     > a {
       padding-bottom: 3.5rem;
+    }
+  }
+
+  @media ${device.laptopToUp} {
+    > img {
+      max-height: 392px;
+      margin: 0;
     }
   }
 `

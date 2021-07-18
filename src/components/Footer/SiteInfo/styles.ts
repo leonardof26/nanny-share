@@ -10,13 +10,13 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media ${device.laptop} {
-    max-width: 1180px;
-    padding: 4rem 0;
-  }
-
-  @media ${device.tabletPortrait} {
+  @media ${device.tabletPortraitToUp} {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media ${device.laptopToUp} {
+    max-width: 1180px;
+    padding: 4rem 0;
   }
 `

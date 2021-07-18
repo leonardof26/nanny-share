@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import { FieldError } from 'react-hook-form'
+
 interface InputProps {
-  error?: boolean
+  error?: FieldError
 }
 
 export const Container = styled.input<InputProps>`

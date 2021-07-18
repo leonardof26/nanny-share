@@ -16,12 +16,11 @@ export const Container = styled.div`
     padding: 1rem 0;
   }
 
-  @media ${device.tabletPortrait} {
-    padding: 0;
-    width: 100%;
+  @media ${device.mobileMToUp} {
+    max-width: 60%;
   }
 
-  @media ${device.mobileL} {
+  @media ${device.mobileLToUp} {
     max-width: 100%;
     flex-wrap: no-wrap;
 
@@ -30,7 +29,8 @@ export const Container = styled.div`
     }
   }
 
-  @media ${device.mobileM} {
-    max-width: 60%;
+  @media ${device.tabletPortraitToUp} {
+    padding: 0;
+    width: 100%;
   }
 `
