@@ -4,16 +4,16 @@ import cover from '../../assets/images/cover.png'
 import { Header } from '../Header'
 import { CompanyInfo } from './CompanyInfo'
 
-function Cover() {
+function Hero() {
   return (
     <Container>
       <Background src={cover} alt="family with children on kitchen" />
 
       <Header />
 
-      <CompanyInfo />
+      <CompanyInfo model="A" />
     </Container>
   )
 }
 
-export { Cover }
+export { Hero }

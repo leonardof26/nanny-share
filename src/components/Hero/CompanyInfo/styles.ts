@@ -4,8 +4,8 @@ import { device } from '../../../styles/devices'
 
 export const Container = styled.div`
   margin: auto;
-  padding: 0 2rem;
-  height: calc(60vh - 60px);
+  padding: 0 1rem;
+  height: calc(70vh - 60px);
 
   display: flex;
   align-items: center;
@@ -13,6 +13,10 @@ export const Container = styled.div`
 
   img {
     display: none;
+  }
+
+  @media ${device.mobileSToUp} {
+    height: calc(60vh - 60px);
   }
 
   @media ${device.mobileLToUp} {
@@ -69,6 +73,7 @@ export const Info = styled.div`
   }
 
   @media ${device.tabletLandScapedToUp} {
+    margin-left: 1rem;
     max-width: 590px;
     align-items: flex-start;
     text-align: left;

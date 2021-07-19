@@ -9,7 +9,13 @@ export const Container = styled.div`
   justify-content: space-between;
 
   img {
-    max-height: 204px;
+    max-height: 180px;
+  }
+
+  @media ${device.mobileSToUp} {
+    img {
+      max-height: 204px;
+    }
   }
 
   @media ${device.tabletPortraitToUp} {

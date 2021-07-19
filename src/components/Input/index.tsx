@@ -9,10 +9,10 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 function Input({ error, ...rest }: InputProps) {
-  return <Container error={error} {...rest} />
+  return <Container error={!!error} {...rest} />
 }
 
-export default Input
+export { Input }
 
 Input.defaultProps = {
   error: null,

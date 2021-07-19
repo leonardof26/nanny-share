@@ -18,7 +18,6 @@ type HandleSubmitFunction = {
 
 interface ProductPresentationProps {
   loading: boolean
-  // eslint-disable-next-line no-unused-vars
   handleSubscribeToNewsletter: ({ user, reset }: HandleSubmitFunction) => void
 }
 

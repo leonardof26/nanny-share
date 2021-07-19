@@ -5,8 +5,12 @@ import { device } from '../../styles/devices'
 export const Container = styled.div`
   position: relative;
   overflow: hidden;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
+
+  @media ${device.mobileSToUp} {
+    height: 60vh;
+  }
 
   @media ${device.mobileLToUp} {
     min-height: 70vh;

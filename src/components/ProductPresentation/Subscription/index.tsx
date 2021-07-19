@@ -10,7 +10,7 @@ import { useInView } from 'react-intersection-observer'
 
 import { Container } from './styles'
 
-import Input from '../../Input'
+import { Input } from '../../Input'
 import { Button } from '../../Button'
 
 type SubscribeFormData = {
@@ -30,7 +30,6 @@ type HandleSubmitFunction = {
 
 interface SubscriptionProps {
   loading: boolean
-  // eslint-disable-next-line no-unused-vars
   handleSubscribeToNewsletter: ({ user, reset }: HandleSubmitFunction) => void
 }
 

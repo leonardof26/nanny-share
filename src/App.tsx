@@ -6,7 +6,7 @@ import { newsLetter } from './services/api/calls'
 
 import { GlobalStyle } from './styles/global'
 
-import { Cover } from './components/Cover'
+import { Hero } from './components/Hero'
 import { AvailableCareTaker } from './components/AvailableCareTaker'
 import { ProductPresentation } from './components/ProductPresentation'
 import { Footer } from './components/Footer'
@@ -44,7 +44,7 @@ function App() {
 
   return (
     <>
-      <Cover />
+      <Hero />
       <AvailableCareTaker />
       <ProductPresentation
         loading={loading}

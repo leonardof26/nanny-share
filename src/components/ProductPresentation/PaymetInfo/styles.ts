@@ -10,8 +10,14 @@ export const Container = styled(motion.div)`
   justify-content: space-between;
 
   img {
-    max-height: 230px;
+    max-height: 200px;
     margin: auto;
+  }
+
+  @media ${device.mobileSToUp} {
+    img {
+      max-height: 230px;
+    }
   }
 
   @media ${device.tabletPortraitToUp} {

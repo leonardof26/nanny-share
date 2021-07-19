@@ -21,8 +21,14 @@ export const Container = styled.div`
   }
 
   > a {
-    max-width: 50%;
+    max-width: 80%;
     margin: 1rem 0;
+  }
+
+  @media ${device.mobileSToUp} {
+    > a {
+      max-width: 50%;
+    }
   }
 
   @media ${device.mobileLToUp} {

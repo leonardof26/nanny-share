@@ -5,7 +5,7 @@ import { device } from '../../../../styles/devices'
 export const Container = styled.div`
   padding: 2rem 0;
   display: flex;
-  max-width: 70%;
+  max-width: 80%;
   flex-wrap: wrap;
 
   a + a {
@@ -14,6 +14,10 @@ export const Container = styled.div`
 
   a {
     padding: 1rem 0;
+  }
+
+  @media ${device.mobileSToUp} {
+    max-width: 70%;
   }
 
   @media ${device.mobileMToUp} {
